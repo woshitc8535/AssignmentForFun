@@ -178,4 +178,20 @@ public class DansDilemmaTests {
         Assert.assertEquals(expected, actual);
     }
 
+
+
+    @Test
+    public void dilemmaOfNTest6() {
+        //Given
+        Double[] inputs = new Double[6];
+        for (int i = 0; i< inputs.length; i++) {
+            inputs[i] = (double) i;
+        }
+        //When
+        Integer actual = dansDilemma.dilemmaOfN(inputs);
+        //Then
+        Integer expected = 33;
+        Assert.assertEquals(expected, actual);
+    }
+
 }
